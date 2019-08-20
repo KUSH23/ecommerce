@@ -1,0 +1,8 @@
+<h1>Products</h1>
+<ul>
+{% for obj in object_list %}
+    <li>{{ obj.title }}</li>
+{% empty %}
+    <li>No Products yet.</li>
+{% endfor %}
+</ul>
